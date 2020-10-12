@@ -14,7 +14,8 @@
         "Presentation":{
             "text": "Ciao io mi chiamo Dino",
             "botName": "Iniziamo!",
-            "BotFunc": "fetchNascondigli()",
+            "botFunc": "fetchNascondigli()",
+            "img_url":"./img/dinoEsTwo.png",
             "backpack":{
                 "obj1": "",
                 "obj2": "",

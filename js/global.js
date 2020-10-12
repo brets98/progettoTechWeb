@@ -92,7 +92,7 @@
     console.log("----");
   }
 
-  function appendDataButton(obj){
+  function appendDataButton(obj){ 
     
     var pulsContainer = document.getElementById("pulsante");
 
