@@ -1,13 +1,23 @@
-// run nom i to reinstall all the modules that are needed
+const express = require("express");
+const app = express();
+const path = require("path");
 
-const express = require('express');
-const app = express();   //http://expressjs.com/
-
+//parsing the information that comes from the web browser
 app.use(express.json());
 
+//startic web server
+app.use(express.static(path.join(__dirname, "./")));
 
-app.get('*', (req, res) => {
-    res.sendFile('/main.html', { root: './' });
+//folders
+app.use("/games", express.static(__dirname + "/games"));
+app.use("/stories", express.static(__dirname + "/stories"));
+app.use("/img", express.static(__dirname + "/img"));
+
+//every time the user visits any URL address then the file index.html will desplay to the web browser
+app.get("*", (request, response) => {
+  response.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(8000, () => console.log('listening on port 8000...'));
+app.listen(8000, () => {
+  console.log("Listening at localhost:8000");
+});
