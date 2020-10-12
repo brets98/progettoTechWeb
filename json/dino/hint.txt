@@ -1,0 +1,10 @@
+Hint per implementazioni
+
+
+    IMMAIGNI DEI BOTTONI{
+        aggiungi un oggetto con url dell'immagine che va a diventare lo sfondo del bottone 
+    }
+    
+    SELEZIONE DELLA SPECIE{
+        i "ritenta" modificano il testo e gli dicono di riprovare
+    }

@@ -1,0 +1,85 @@
+[
+    {
+        "Intro":{
+            "text": "Chiamata in arrivo . . .",
+            "botName": "Rispondi",
+            "BotFunc": "fetchPresentation()",
+            "backpack":{
+                "obj1": "",
+                "obj2": "",
+                "obj3": ""
+            }
+        },    
+        "Presentation":{
+            "text": "Ciao io mi chiamo Dino",
+            "botName": "Iniziamo!",
+            "BotFunc": "fetchNascondigli()",
+            "backpack":{
+                "obj1": "",
+                "obj2": "",
+                "obj3": ""
+            }
+        },
+        "HideAndSeek":{
+            "text":"Aiutami devo trovare un riparo dal terremoto! dove mi posso nascondere??",
+            "botName": "porta",
+            "BotFunc": "fetchfindMap()",
+            "botName2": "tavolo",
+            "BotFunc2": "fetchfindMap()",
+            "botName3": "giardino",
+            "BotFunc3": "fetchfindMap()",
+            "backpack":{
+                "obj1": "",
+                "obj2": "",
+                "obj3": ""
+            }
+        },
+        "FindMap":{
+            "text":"Bravissmo hai trovato una mappa fai uno schreenshot e conserva la foto, ci servira' dopo",
+            "botName": "porta",
+            "BotFunc": "fetchPreareBackpack()",
+            "backpack":{
+                "obj1": "",
+                "obj2": "",
+                "obj3": ""
+            }
+        },
+        "PrepareBackpack":{
+            "text":"Prepariamoci per un lungo viaggio! prepariamo lo zaino. Scegli 3 oggetti che ti vuoi portare dietro che ci potranno servire",
+            "botName": "borraccia",
+            "BotFunc": "addBottle()",
+            "botName2": "Corda",
+            "BotFunc2": "addCorda()",
+            "botName3": "Forbici",
+            "BotFunc3": "addForbici()",
+            "botName4": "Cannocchiale",
+            "BotFunc4": "addCannocchiale()",
+            "botName5": "kit medico",
+            "botFunc5": "addKitMedico()",
+            "botAvanti" : "Avanti",
+            "BotFunctAvanti": "fetchFriendIntro()",
+            "backpack":{
+                "obj1": "",
+                "obj2": "",
+                "obj3": ""
+            }
+        },
+        "FriendIntro": {
+            "text": "Per aiutarci in questa avventura ci aiutera' un nuovo amico! Lui si chaiama BEPPE, mi sai dire che tipo di dinosaure e'?",
+            "botName":"velociraptor",
+            "botFunc": "ritenta()",
+            "botName2": "triceratopo",
+            "botFunc2": "ritenta()",
+            "botName3": "Torosauro",
+            "BotFunc3": "Giusto()",
+            "backpack":{
+                "obj1": "",
+                "obj2": "",
+                "obj3": ""
+            }
+
+        }
+
+
+    }
+]
