@@ -3,7 +3,8 @@
         "Intro":{
             "text": "Chiamata in arrivo . . .",
             "botName": "Rispondi",
-            "BotFunc": "fetchPresentation()",
+            "botFunc": "fetchPresentation()",
+            "img_url":"./img/dinoEsOne.png",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
