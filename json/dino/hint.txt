@@ -8,3 +8,4 @@ Hint per implementazioni
     SELEZIONE DELLA SPECIE{
         i "ritenta" modificano il testo e gli dicono di riprovare
     }
+    

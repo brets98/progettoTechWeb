@@ -4,7 +4,7 @@
             "text": "Chiamata in arrivo . . .",
             "botName": "Rispondi",
             "botFunc": "fetchPresentation()",
-            "img_url":"./img/dinoEsOne.png",
+            "img_url": "./img/dinoEsOne.png",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
@@ -15,7 +15,7 @@
             "text": "Ciao io mi chiamo Dino",
             "botName": "Iniziamo!",
             "botFunc": "fetchNascondigli()",
-            "img_url":"./img/dinoEsTwo.png",
+            "img_url":"./img/dinoEsTwo.jpg",
             "backpack":{
                 "obj1": "",
                 "obj2": "",

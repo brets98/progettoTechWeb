@@ -1,4 +1,7 @@
+    // sto gia caricando la seconda pagina 
+    
     function fetchPresentation(){    // fino a qua funziona tutto
+      console.log("mamma mia");
         fetch("./json/dino/dino.json  ")
         .then(function(res){
         return res.json(); // pars the json in a regular js obj

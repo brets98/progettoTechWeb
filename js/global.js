@@ -3,8 +3,10 @@
   function logz() {
       console.log("faccio qualcosa di globale");
     }
+
+
+
   function agePicker() {
-    console.log("ciao");
     var sel = document.getElementById("eta");
     var userAge = sel.options[sel.selectedIndex].value;
     console.log(userAge);
@@ -45,7 +47,7 @@
     document.getElementById("pulsante").innerHTML = "";
     document.getElementById("zaino").innerHTML = "";
 
-
+    //Servono per modificare i dive di #game con i nuovi oggetti che sono presenti in din.json
     appendDatamyData(obj);
     appendDataPicture(obj);
     appendDataButton(obj);
@@ -77,8 +79,8 @@
       var stripped = urlvalue.replace(/['"]+/g, "");
       var img_url = document.createElement("IMG");
       img_url.setAttribute("src", stripped);
-      img_url.setAttribute("width", "640");
-      img_url.setAttribute("height", "220");
+      img_url.setAttribute("width", "300");
+      img_url.setAttribute("height", "300");
       //img_url.setAttribute("alt", "The Pulpit Rock");
       //document.body.appendChild(img_url);
       picContainer.appendChild(img_url);
