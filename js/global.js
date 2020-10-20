@@ -45,7 +45,7 @@
   }).then(function(obj){
 
    
-pulisci();
+    pulisci();
 
     //Servono per modificare i dive di #game con i nuovi oggetti che sono presenti in din.json
 

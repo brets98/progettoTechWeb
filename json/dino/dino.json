@@ -25,8 +25,8 @@
         },
         "HideAndSeek":{
             "text":"Aiutami devo trovare un riparo dal terremoto! dove mi posso nascondere??",
+            "botFunc": "fetchFindMap()",
             "botName": "porta",
-            "BotFunc": "fetchFindMap()",
             "botName2": "tavolo",
             "botName3": "giardino",
             "img_url":"./img/dinoEsTwo.jpg",
@@ -41,7 +41,7 @@
         "FindMap":{
             "text":"Bravissmo hai trovato una mappa fai uno schreenshot e conserva la foto, ci servira' dopo",
             "botName": "porta",
-            "BotFunc": "fetchPreareBackpack()",
+            "botFunc": "fetchPreareBackpack()",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
@@ -51,17 +51,17 @@
         "PrepareBackpack":{
             "text":"Prepariamoci per un lungo viaggio! prepariamo lo zaino. Scegli 3 oggetti che ti vuoi portare dietro che ci potranno servire",
             "botName": "borraccia",
-            "BotFunc": "addBottle()",
+            "botFunc": "addBottle()",
             "botName2": "Corda",
-            "BotFunc2": "addCorda()",
+            "botFunc2": "addCorda()",
             "botName3": "Forbici",
-            "BotFunc3": "addForbici()",
+            "botFunc3": "addForbici()",
             "botName4": "Cannocchiale",
-            "BotFunc4": "addCannocchiale()",
+            "botFunc4": "addCannocchiale()",
             "botName5": "kit medico",
             "botFunc5": "addKitMedico()",
             "botAvanti" : "Avanti",
-            "BotFunctAvanti": "fetchFriendIntro()",
+            "botFunctAvanti": "fetchFriendIntro()",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
@@ -75,7 +75,7 @@
             "botName2": "triceratopo",
             "botFunc2": "ritenta()",
             "botName3": "Torosauro",
-            "BotFunc3": "Giusto()",
+            "botFunc3": "Giusto()",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
