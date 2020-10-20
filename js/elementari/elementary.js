@@ -5,13 +5,15 @@
         document.getElementById("pulsante").innerHTML = "";
         document.getElementById("zaino").innerHTML = "";
     }
+
+
+//------------------2 Presentatiom----------
     function fetchPresentation(){    // fino a qua funziona tutto
-      console.log("mamma mia");
+      console.log("Carico Presentation -> 2");
         fetch("./json/dino/dino.json  ")
         .then(function(res){
         return res.json(); // pars the json in a regular js obj
         }).then(function(obj){
-        console.log(obj);
 
         pulisci();
 
@@ -19,6 +21,7 @@
         appendDatamyData2(obj);
         appendDataPicture2(obj);
         appendDataButton2(obj);
+        console.log("Andato a buon fine")
 
         }).catch(function(err){
         console.error(err);
@@ -31,9 +34,9 @@
         var introduzione = document.createElement("p");
         mainContainer.appendChild(introduzione);
         introduzione.innerHTML = obj[i].Presentation.text;
-      }
+      }/*
       console.log(introduzione);
-      console.log("----");
+      console.log("----");*/
   
     }
 
@@ -53,12 +56,12 @@
           picContainer.appendChild(img_url);
           img_url.innerHTML = obj[j].Presentation.img_url;
         }
-      
+      /*
         console.log(img_url);
         console.log(urlvalue);
         console.log(stripped);
         console.log(picContainer);
-        console.log("----");
+        console.log("----");*/
       }
       function appendDataButton2(obj){
     
@@ -77,21 +80,21 @@
     
           puls.innerHTML = obj[i].Presentation.botName;
         }
-    
+    /*
         console.log(puls);
         console.log(urlvalue);
         console.log(stripped);
-        console.log(pulsContainer);
+        console.log(pulsContainer);*/
     }
 
 //------------------------ 3 HideAndSeek-------------------------
 
     function fetchNascondigli(){    // fino a qua funziona tutto
-        fetch("./json/dino/dino.json  ")
+      console.log("Carico Nascondigli -> 3");
+        fetch("./json/dino/dino.json")
         .then(function(res){
         return res.json(); // pars the json in a regular js obj
         }).then(function(obj){
-        console.log(obj);
 
         pulisci();
 
@@ -99,6 +102,7 @@
         appendDatamyData3(obj);
         appendDataPicture3(obj);
         appendDataButton3(obj);
+        console.log("Andato a buon fine")
 
         }).catch(function(err){
         console.error(err);
@@ -112,8 +116,9 @@
         mainContainer.appendChild(introduzione);
         introduzione.innerHTML = obj[i].HideAndSeek.text;
       }
+      /*
       console.log(introduzione);
-      console.log("----");
+      console.log("----");*/
   
     }
 
@@ -133,12 +138,12 @@
           picContainer.appendChild(img_url);
           img_url.innerHTML = obj[j].HideAndSeek.img_url;
         }
-      
+      /*
         console.log(img_url);
         console.log(urlvalue);
         console.log(stripped);
         console.log(picContainer);
-        console.log("----");
+        console.log("----");*/
       }
 
 
@@ -176,14 +181,14 @@
 
 
         }
-    
+    /*
         console.log(puls);
         console.log(urlvalue);
         console.log(stripped);
-        console.log(pulsContainer);
+        console.log(pulsContainer);*/
     }
 
 //-----------------------------------4 FindMap--------------------------
     function fetchFindMap(){
-      console.log("carichiamo questa mappa");
+      console.log("Carico trova mappa -> 4");
     }

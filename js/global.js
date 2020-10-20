@@ -24,20 +24,19 @@
     }
   }
 
-  function playElementary(){
+  function playGame(){
     console.log("elementari");
     $("#game").removeClass("hidden");
     $("#giocoElementari").removeClass("hidden").addClass("hidden");
      
 
     fetchElementary();
-
-  console.log("inizio gioco delle elementari");
-
   }
 
-  function fetchElementary(){
 
+//-------------------- 1 Intro-----------------------------
+  function fetchElementary(){
+    console.log("carico Intro -> 1")
   fetch("./json/dino/dino.json  ")
       .then(function(res){
       return res.json(); // pars the json in a regular js obj
@@ -52,6 +51,8 @@
     appendDatamyData(obj);
     appendDataPicture(obj);
     appendDataButton(obj);
+    console.log("Andato a buon fine");
+
 
   }).catch(function(err){
 
@@ -67,8 +68,9 @@
       mainContainer.appendChild(introduzione);
       introduzione.innerHTML = obj[i].Intro.text;
     }
+    /*
     console.log(introduzione);
-    console.log("----");
+    console.log("----");*/
 
   }
   
@@ -87,12 +89,12 @@
       picContainer.appendChild(img_url);
       img_url.innerHTML = obj[j].Intro.img_url;
     }
-  
+  /*
     console.log(img_url);
     console.log(urlvalue);
     console.log(stripped);
     console.log(picContainer);
-    console.log("----");
+    console.log("----");*/
   }
 
   function appendDataButton(obj){ 
@@ -112,11 +114,11 @@
 
       puls.innerHTML = obj[i].Intro.botName;
     }
-
+/*
     console.log(puls);
     console.log(urlvalue);
     console.log(stripped);
-    console.log(pulsContainer);
+    console.log(pulsContainer);*/
   }
 
   
