@@ -40,8 +40,9 @@
         },
         "FindMap":{
             "text":"Bravissmo hai trovato una mappa fai uno schreenshot e conserva la foto, ci servira' dopo",
-            "botName": "porta",
+            "botName": "porta(screen)",
             "botFunc": "fetchPreareBackpack()",
+            "img_url":"./img/dinoEsOne.jpg",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
@@ -62,6 +63,8 @@
             "botFunc5": "addKitMedico()",
             "botAvanti" : "Avanti",
             "botFunctAvanti": "fetchFriendIntro()",
+            "img_url":"./img/dinoEsTwo.jpg",
+
             "backpack":{
                 "obj1": "",
                 "obj2": "",
@@ -76,6 +79,8 @@
             "botFunc2": "ritenta()",
             "botName3": "Torosauro",
             "botFunc3": "Giusto()",
+            "img_url":"./img/dinoEsOne.jpg",
+
             "backpack":{
                 "obj1": "",
                 "obj2": "",
