@@ -4,18 +4,19 @@
             "text": "Chiamata in arrivo . . .",
             "botName": "Rispondi",
             "botFunc": "fetchPresentation()",
-            "img_url": "./img/dinoEsOne.png",
+            "img_url": "./img/dinoEsTwo.jpg",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
                 "obj3": ""
             }
-        },    
+        },
+        
         "Presentation":{
-            "text": "Ciao io mi chiamo Dino",
-            "botName": "Iniziamo!",
+            "text": "Ciao io mi chiamo Dino, se vuoi iniziare a giocare con me clicca sul pulsante seguente",
+            "botName": "Via!",
             "botFunc": "fetchNascondigli()",
-            "img_url":"./img/dinoEsTwo.jpg",
+            "img_url":"./img/dinoEsOne.png",
             "backpack":{
                 "obj1": "",
                 "obj2": "",
@@ -83,5 +84,6 @@
         }
 
 
+        
     }
 ]
