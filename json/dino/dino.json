@@ -26,15 +26,16 @@
         "HideAndSeek":{
             "text":"Aiutami devo trovare un riparo dal terremoto! dove mi posso nascondere??",
             "botName": "porta",
-            "BotFunc": "fetchfindMap()",
+            "BotFunc": "fetchFindMap()",
             "botName2": "tavolo",
-            "BotFunc2": "fetchfindMap()",
             "botName3": "giardino",
-            "BotFunc3": "fetchfindMap()",
+            "img_url":"./img/dinoEsTwo.jpg",
+
             "backpack":{
                 "obj1": "",
                 "obj2": "",
                 "obj3": ""
+            
             }
         },
         "FindMap":{

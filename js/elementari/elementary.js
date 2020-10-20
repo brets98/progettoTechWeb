@@ -86,7 +86,7 @@
         console.log(stripped);
         console.log(pulsContainer);
     }
-
+//pagina 3
     function fetchNascondigli(){
         console.log("caricamento della pagina dei nascondigli");
         fetch("./json/dino/dino.json  ")
@@ -99,6 +99,8 @@
         appendDatamyData3(obj);
         appendDataPicture3(obj);
         appendDataButton3(obj);
+            //appendDataButton3a(obj);
+            //appendDataButton3b(obj);
 
         }).catch(function(err){
         console.error(err);
@@ -120,9 +122,9 @@ function appendDatamyData3(obj){
 
     function appendDataPicture3(obj){
         var picContainer = document.getElementById("picture");
-    
+    console.log("coccode");
         for (var j = 0; j < obj.length; j++) {
-          var urlvalue = JSON.stringify(obj[j].Presentation.img_url);
+          var urlvalue = JSON.stringify(obj[j].HideAndSeek.img_url);
           var stripped = urlvalue.replace(/['"]+/g, "");
           var img_url = document.createElement("IMG");
           img_url.setAttribute("src", stripped);
@@ -147,7 +149,51 @@ function appendDatamyData3(obj){
         var pulsContainer = document.getElementById("pulsante");
    
         for (var i = 0; i < obj.length; i++) {
-          var urlvalue = JSON.stringify(obj[i].Presentation.botFunc);
+         var urlvalue = JSON.stringify(obj[i].HideAndSeek.botFunc);
+         var urlvalue2 = JSON.stringify(obj[i].HideAndSeek.botFunc2);
+         var urlvalue3 = JSON.stringify(obj[i].HideAndSeek.botFunc3);
+            
+          var stripped = urlvalue.replace(/['"]+/g, "");
+          var stripped2 = urlvalue2.replace(/['"]+/g, "");
+          var stripped3 = urlvalue3.replace(/['"]+/g, "");
+            
+          var puls = document.createElement("button");
+          var puls2 = document.createElement("button");
+          var puls3 = document.createElement("button");
+    
+            puls.setAttribute("onclick", stripped);
+            puls2.setAttribute("onclick", stripped2);
+            puls3.setAttribute("onclick", stripped3);
+    
+          pulsContainer.appendChild(puls);
+             pulsContainer.appendChild(puls2);
+             pulsContainer.appendChild(puls3);
+    
+          puls.innerHTML = obj[i].HideAndSeek.botName;
+            puls2.innerHTML = obj[i].HideAndSeek.botName2;
+            puls3.innerHTML = obj[i].HideAndSeek.botName3;
+        }
+    
+      /*  console.log(puls);
+        console.log(puls2);
+          console.log(puls3);
+
+        console.log(urlvalue);
+        console.log(stripped);
+        console.log(pulsContainer);
+           console.log(urlvalue2);
+        console.log(stripped2);
+        console.log(pulsContainer2);
+           console.log(urlvalue3);
+        console.log(stripped3);
+        console.log(pulsContainer3);*/
+   } /*
+function appendDataButton3a(obj){
+    
+        var pulsContainer = document.getElementById("pulsante2");
+   
+        for (var i = 0; i < obj.length; i++) {
+          var urlvalue = JSON.stringify(obj[i].HideAndSeek.botFunc2);
     
           var stripped = urlvalue.replace(/['"]+/g, "");
     
@@ -159,7 +205,7 @@ function appendDatamyData3(obj){
     
           pulsContainer.appendChild(puls);
     
-          puls.innerHTML = obj[i].HideAndSeek.botName;
+          puls.innerHTML = obj[i].HideAndSeek.botName2;
         }
     
         console.log(puls);
@@ -170,9 +216,42 @@ function appendDatamyData3(obj){
         console.log(pulsContainer);
     }
 
-function fetchfindMap(){
-    fetch("./json/dino/dino.json  ")
-        .then(function(res){
+
+function appendDataButton3b(obj){
+    
+        var pulsContainer = document.getElementById("pulsante3");
+   
+        for (var i = 0; i < obj.length; i++) {
+          var urlvalue = JSON.stringify(obj[i].HideAndSeek.botFunc3);
+    
+          var stripped = urlvalue.replace(/['"]+/g, "");
+    
+          var puls = document.createElement("button");
+       
+
+    
+          puls.setAttribute("onclick", stripped);
+    
+          pulsContainer.appendChild(puls);
+    
+          puls.innerHTML = obj[i].HideAndSeek.botName3;
+        }
+    
+        console.log(puls);
+                  
+
+        console.log(urlvalue);
+        console.log(stripped);
+        console.log(pulsContainer);
+    }
+*/
+
+
+   
+//pagina 4
+function fetchFindMap(){
+     fetch("./json/dino/dino.json  ")
+      .then(function(res){
         return res.json(); // pars the json in a regular js obj
         }).then(function(obj){
 
@@ -181,13 +260,13 @@ function fetchfindMap(){
         appendDatamyData4(obj);
         appendDataPicture4(obj);
         appendDataButton4(obj);
-        appendDataButton4a(obj);
-        appendDataButton4b(obj);
+ 
 
         }).catch(function(err){
         console.error(err);
         })
     
+    console.log("find map");
 }
 function appendDatamyData4(obj){
         var mainContainer = document.getElementById("myData");
@@ -206,7 +285,7 @@ function appendDatamyData4(obj){
         var picContainer = document.getElementById("picture");
     
         for (var j = 0; j < obj.length; j++) {
-          var urlvalue = JSON.stringify(obj[j].Presentation.img_url);
+          var urlvalue = JSON.stringify(obj[j].FindMap.img_url);
           var stripped = urlvalue.replace(/['"]+/g, "");
           var img_url = document.createElement("IMG");
           img_url.setAttribute("src", stripped);
@@ -231,7 +310,7 @@ function appendDatamyData4(obj){
         var pulsContainer = document.getElementById("pulsante");
    
         for (var i = 0; i < obj.length; i++) {
-          var urlvalue = JSON.stringify(obj[i].Presentation.botFunc);
+          var urlvalue = JSON.stringify(obj[i].FindMap.botFunc);
     
           var stripped = urlvalue.replace(/['"]+/g, "");
     
@@ -255,63 +334,3 @@ function appendDatamyData4(obj){
     }
 
 
-function appendDataButton4a(obj){
-    
-        var pulsContainer = document.getElementById("pulsante2");
-   
-        for (var i = 0; i < obj.length; i++) {
-          var urlvalue = JSON.stringify(obj[i].Presentation.botFunc);
-    
-          var stripped = urlvalue.replace(/['"]+/g, "");
-    
-          var puls = document.createElement("button");
-        //var puls1 = document.createElement("button");
-
-    
-          puls.setAttribute("onclick", stripped);
-    
-          pulsContainer.appendChild(puls);
-    
-          puls.innerHTML = obj[i].FindMap.botName2;
-        }
-    
-        console.log(puls);
-                  //console.log(puls1);
-
-        console.log(urlvalue);
-        console.log(stripped);
-        console.log(pulsContainer);
-    }
-
-
-function appendDataButton4b(obj){
-    
-        var pulsContainer = document.getElementById("pulsante3");
-   
-        for (var i = 0; i < obj.length; i++) {
-          var urlvalue = JSON.stringify(obj[i].Presentation.botFunc);
-    
-          var stripped = urlvalue.replace(/['"]+/g, "");
-    
-          var puls = document.createElement("button");
-        //var puls1 = document.createElement("button");
-
-    
-          puls.setAttribute("onclick", stripped);
-    
-          pulsContainer.appendChild(puls);
-    
-          puls.innerHTML = obj[i].FindMap.botName3;
-        }
-    
-        console.log(puls);
-                  //console.log(puls1);
-
-        console.log(urlvalue);
-        console.log(stripped);
-        console.log(pulsContainer);
-    }
-
-
-
-   

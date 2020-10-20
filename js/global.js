@@ -28,7 +28,7 @@
     console.log("elementari");
     $("#game").removeClass("hidden");
     $("#giocoElementari").removeClass("hidden").addClass("hidden");
-      $("#")
+     
 
     fetchElementary();
 
