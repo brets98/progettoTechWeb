@@ -87,26 +87,26 @@
         console.log(pulsContainer);*/
     }
 
-//------------------------ 3 HideAndSeek-------------------------
+      //------------------------ 3 HideAndSeek-------------------------
 
-    function fetchNascondigli(){    // fino a qua funziona tutto
-      console.log("Carico Nascondigli -> 3");
-        fetch("./json/dino/dino.json")
-        .then(function(res){
-        return res.json(); // pars the json in a regular js obj
-        }).then(function(obj){
+      function fetchNascondigli(){    // fino a qua funziona tutto
+        console.log("Carico Nascondigli -> 3");
+          fetch("./json/dino/dino.json")
+          .then(function(res){
+          return res.json(); // pars the json in a regular js obj
+          }).then(function(obj){
 
-        pulisci();
+          pulisci();
 
 
-        appendDatamyData3(obj);
-        appendDataPicture3(obj);
-        appendDataButton3(obj);
-        console.log("Andato a buon fine")
+          appendDatamyData3(obj);
+          appendDataPicture3(obj);
+          appendDataButton3(obj);
+          console.log("Andato a buon fine")
 
-        }).catch(function(err){
-        console.error(err);
-        })
+          }).catch(function(err){
+          console.error(err);
+          })
     }
     
     function appendDatamyData3(obj){
@@ -157,8 +157,6 @@
           var urlvalue = JSON.stringify(obj[i].HideAndSeek.botFunc);
     
           var stripped =  urlvalue.replace(/['"]+/g, "");
-          var stripped2 = urlvalue.replace(/['"]+/g, "");
-          var stripped3 = urlvalue.replace(/['"]+/g, "");
           
           var puls = document.createElement("button");
           var puls2 = document.createElement("button");
@@ -166,8 +164,8 @@
 
     
           puls.setAttribute("onclick", stripped);
-          puls2.setAttribute("onclick", stripped2);
-          puls3.setAttribute("onclick", stripped3);
+          puls2.setAttribute("onclick", stripped);
+          puls3.setAttribute("onclick", stripped);  
 
     
           pulsContainer.appendChild(puls);
@@ -187,10 +185,13 @@
         console.log(stripped);
         console.log(pulsContainer);*/
     }
-
-//-----------------------------------4 FindMap--------------------------
+    
+    //----------------------------------- 4 FindMap--------------------------
     function fetchFindMap(){
+      
+      
       console.log("Carico trova mappa -> 4");
+      
       fetch("./json/dino/dino.json")
       .then(function(res){
       return res.json(); // pars the json in a regular js obj
@@ -220,24 +221,24 @@
     console.log(introduzione);
     console.log("----");*/
 
-  }
+    }
 
 
-  function appendDataPicture4(obj){
-      var picContainer = document.getElementById("picture");
-  
-      for (var j = 0; j < obj.length; j++) {
-        var urlvalue = JSON.stringify(obj[j].FindMap.img_url);
-        var stripped = urlvalue.replace(/['"]+/g, "");
-        var img_url = document.createElement("IMG");
-        img_url.setAttribute("src", stripped);
-        img_url.setAttribute("width", "640");
-        img_url.setAttribute("height", "220");
-        //img_url.setAttribute("alt", "The Pulpit Rock");
-        //document.body.appendChild(img_url);
-        picContainer.appendChild(img_url);
-        img_url.innerHTML = obj[j].FindMap.img_url;
-      }
+    function appendDataPicture4(obj){
+        var picContainer = document.getElementById("picture");
+    
+        for (var j = 0; j < obj.length; j++) {
+          var urlvalue = JSON.stringify(obj[j].FindMap.img_url);
+          var stripped = urlvalue.replace(/['"]+/g, "");
+          var img_url = document.createElement("IMG");
+          img_url.setAttribute("src", stripped);
+          img_url.setAttribute("width", "640");
+          img_url.setAttribute("height", "220");
+          //img_url.setAttribute("alt", "The Pulpit Rock");
+          //document.body.appendChild(img_url);
+          picContainer.appendChild(img_url);
+          img_url.innerHTML = obj[j].FindMap.img_url;
+        }
     /*
       console.log(img_url);
       console.log(urlvalue);
@@ -262,7 +263,7 @@
   
         puls.innerHTML = obj[i].FindMap.botName;
       }
-  /*
+      /*
       console.log(puls);
       console.log(urlvalue);
       console.log(stripped);
@@ -272,37 +273,37 @@
   //-----------------------5 fetchPreareBackpack------------------//
   function fetchPreareBackpack(){
 
-   console.log("Carico trova mappa -> 4");
-      fetch("./json/dino/dino.json")
-      .then(function(res){
-      return res.json(); // pars the json in a regular js obj
-      }).then(function(obj){
+    console.log("Carico Zaino -> 5");
+        fetch("./json/dino/dino.json")
+        .then(function(res){
+        return res.json(); // pars the json in a regular js obj
+        }).then(function(obj){
 
-      pulisci();
+        pulisci();
 
 
-      appendDatamyData5(obj);
-      appendDataPicture5(obj);
-      appendDataButton5(obj);
-      console.log("Andato a buon fine")
+        appendDatamyData5(obj);
+        appendDataPicture5(obj);
+        appendDataButton5(obj);
+        console.log("Andato a buon fine")
 
-      }).catch(function(err){
-      console.error(err);
-      })
+        }).catch(function(err){
+        console.error(err);
+        })
 
     }
 
     function appendDatamyData5(obj){
-      var mainContainer = document.getElementById("myData");
-    for (var i = 0; i < obj.length; i++) {
-      var introduzione = document.createElement("p");
-      mainContainer.appendChild(introduzione);
-      introduzione.innerHTML = obj[i].PrepareBackpack.text;
-    }/*
-    console.log(introduzione);
-    console.log("----");*/
+        var mainContainer = document.getElementById("myData");
+      for (var i = 0; i < obj.length; i++) {
+        var introduzione = document.createElement("p");
+        mainContainer.appendChild(introduzione);
+        introduzione.innerHTML = obj[i].PrepareBackpack.text;
+      }/*
+      console.log(introduzione);
+      console.log("----");*/  
 
-  }
+    }
 
 
   function appendDataPicture5(obj){
@@ -383,8 +384,7 @@
 
   //------------------PrepareBackpack--------------//
 
-  function addBottle(){
-    function fetchFindMap(){
+    function fetchFriendIntro (){
       console.log("Carico trova mappa -> 4");
       fetch("./json/dino/dino.json")
       .then(function(res){
@@ -404,7 +404,6 @@
       })
 
     }
-  }
 
     function appendDatamyData6(obj){
       var mainContainer = document.getElementById("myData");
@@ -464,6 +463,9 @@
       console.log(stripped);
       console.log(pulsContainer);*/
   }
+
+
+ 
 
 
   

@@ -40,7 +40,7 @@
         },
         "FindMap":{
             "text":"Bravissmo hai trovato una mappa fai uno schreenshot e conserva la foto, ci servira' dopo",
-            "botName": "porta(screen)",
+            "botName": "porta",
             "botFunc": "fetchPreareBackpack()",
             "img_url":"./img/dinoEsOne.jpg",
             "backpack":{
