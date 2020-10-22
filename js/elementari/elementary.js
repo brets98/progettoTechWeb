@@ -359,11 +359,11 @@
   
         
         pulsContainer.appendChild(puls);
-        pulsContainer2.appendChild(puls2);
-        pulsContainer3.appendChild(puls3);
-        pulsContainer4.appendChild(puls4);
-        pulsContainer5.appendChild(puls5);
-        pulsContainer6.appendChild(puls6);
+        pulsContainer.appendChild(puls2);
+        pulsContainer.appendChild(puls3);
+        pulsContainer.appendChild(puls4);
+        pulsContainer.appendChild(puls5);
+        pulsContainer.appendChild(puls6);
   
         puls.innerHTML = obj[i].PrepareBackpack.botName;
         puls2.innerHTML = obj[i].PrepareBackpack.botName2;
@@ -384,8 +384,406 @@
 
   //------------------PrepareBackpack--------------//
 
+  function addBottle (){
+    console.log("Carico trova mappa -> 6");
+    fetch("./json/dino/dino.json")
+    .then(function(res){
+    return res.json(); // pars the json in a regular js obj
+    }).then(function(obj){
+
+    pulisci();
+
+
+    appendDatamyData6(obj);
+    appendDataPicture6(obj);
+    appendDataButton6(obj);
+    console.log("Andato a buon fine")
+
+    }).catch(function(err){
+    console.error(err);
+    })
+
+  }
+
+  function appendDatamyData6(obj){
+    var mainContainer = document.getElementById("myData");
+  for (var i = 0; i < obj.length; i++) {
+    var introduzione = document.createElement("p");
+    mainContainer.appendChild(introduzione);
+    introduzione.innerHTML = obj[i].FriendIntro.text;
+  }/*
+  console.log(introduzione);
+  console.log("----");*/
+
+}
+
+
+function appendDataPicture6(obj){
+    var picContainer = document.getElementById("picture");
+
+    for (var j = 0; j < obj.length; j++) {
+      var urlvalue = JSON.stringify(obj[j].FriendIntro.img_url);
+      var stripped = urlvalue.replace(/['"]+/g, "");
+      var img_url = document.createElement("IMG");
+      img_url.setAttribute("src", stripped);
+      img_url.setAttribute("width", "640");
+      img_url.setAttribute("height", "220");
+      //img_url.setAttribute("alt", "The Pulpit Rock");
+      //document.body.appendChild(img_url);
+      picContainer.appendChild(img_url);
+      img_url.innerHTML = obj[j].FriendIntro.img_url;
+    }
+  /*
+    console.log(img_url);
+    console.log(urlvalue);
+    console.log(stripped);
+    console.log(picContainer);
+    console.log("----");*/
+  }
+  function appendDataButton6(obj){
+
+    var pulsContainer = document.getElementById("pulsante");
+
+    for (var i = 0; i < obj.length; i++) {
+      var urlvalue = JSON.stringify(obj[i].FriendIntro.botFunc);
+
+      var stripped = urlvalue.replace(/['"]+/g, "");
+
+      var puls = document.createElement("button");
+
+      puls.setAttribute("onclick", stripped);
+
+      pulsContainer.appendChild(puls);
+
+      puls.innerHTML = obj[i].FriendIntro.botName;
+    }
+/*
+    console.log(puls);
+    console.log(urlvalue);
+    console.log(stripped);
+    console.log(pulsContainer);*/
+}
+
+function addCorda(){
+  console.log("Carico trova mappa -> 6");
+  fetch("./json/dino/dino.json")
+  .then(function(res){
+  return res.json(); // pars the json in a regular js obj
+  }).then(function(obj){
+
+  pulisci();
+
+
+  appendDatamyData7(obj);
+  appendDataPicture7(obj);
+  appendDataButton7(obj);
+  console.log("Andato a buon fine")
+
+  }).catch(function(err){
+  console.error(err);
+  })
+
+}
+
+function appendDatamyData7(obj){
+  var mainContainer = document.getElementById("myData");
+for (var i = 0; i < obj.length; i++) {
+  var introduzione = document.createElement("p");
+  mainContainer.appendChild(introduzione);
+  introduzione.innerHTML = obj[i].FriendIntro.text;
+}/*
+console.log(introduzione);
+console.log("----");*/
+
+}
+
+
+function appendDataPicture7(obj){
+  var picContainer = document.getElementById("picture");
+
+  for (var j = 0; j < obj.length; j++) {
+    var urlvalue = JSON.stringify(obj[j].FriendIntro.img_url);
+    var stripped = urlvalue.replace(/['"]+/g, "");
+    var img_url = document.createElement("IMG");
+    img_url.setAttribute("src", stripped);
+    img_url.setAttribute("width", "640");
+    img_url.setAttribute("height", "220");
+    //img_url.setAttribute("alt", "The Pulpit Rock");
+    //document.body.appendChild(img_url);
+    picContainer.appendChild(img_url);
+    img_url.innerHTML = obj[j].FriendIntro.img_url;
+  }
+/*
+  console.log(img_url);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(picContainer);
+  console.log("----");*/
+}
+function appendDataButton7(obj){
+
+  var pulsContainer = document.getElementById("pulsante");
+
+  for (var i = 0; i < obj.length; i++) {
+    var urlvalue = JSON.stringify(obj[i].FriendIntro.botFunc);
+
+    var stripped = urlvalue.replace(/['"]+/g, "");
+
+    var puls = document.createElement("button");
+
+    puls.setAttribute("onclick", stripped);
+
+    pulsContainer.appendChild(puls);
+
+    puls.innerHTML = obj[i].FriendIntro.botName;
+  }
+/*
+  console.log(puls);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(pulsContainer);*/
+}
+function addForbici (){
+  console.log("Carico trova mappa -> 6");
+  fetch("./json/dino/dino.json")
+  .then(function(res){
+  return res.json(); // pars the json in a regular js obj
+  }).then(function(obj){
+
+  pulisci();
+
+
+  appendDatamyData8(obj);
+  appendDataPicture8(obj);
+  appendDataButton8(obj);
+  console.log("Andato a buon fine")
+
+  }).catch(function(err){
+  console.error(err);
+  })
+
+}
+
+function appendDatamyData8(obj){
+  var mainContainer = document.getElementById("myData");
+for (var i = 0; i < obj.length; i++) {
+  var introduzione = document.createElement("p");
+  mainContainer.appendChild(introduzione);
+  introduzione.innerHTML = obj[i].FriendIntro.text;
+}/*
+console.log(introduzione);
+console.log("----");*/
+
+}
+
+
+function appendDataPicture8(obj){
+  var picContainer = document.getElementById("picture");
+
+  for (var j = 0; j < obj.length; j++) {
+    var urlvalue = JSON.stringify(obj[j].FriendIntro.img_url);
+    var stripped = urlvalue.replace(/['"]+/g, "");
+    var img_url = document.createElement("IMG");
+    img_url.setAttribute("src", stripped);
+    img_url.setAttribute("width", "640");
+    img_url.setAttribute("height", "220");
+    //img_url.setAttribute("alt", "The Pulpit Rock");
+    //document.body.appendChild(img_url);
+    picContainer.appendChild(img_url);
+    img_url.innerHTML = obj[j].FriendIntro.img_url;
+  }
+/*
+  console.log(img_url);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(picContainer);
+  console.log("----");*/
+}
+function appendDataButton8(obj){
+
+  var pulsContainer = document.getElementById("pulsante");
+
+  for (var i = 0; i < obj.length; i++) {
+    var urlvalue = JSON.stringify(obj[i].FriendIntro.botFunc);
+
+    var stripped = urlvalue.replace(/['"]+/g, "");
+
+    var puls = document.createElement("button");
+
+    puls.setAttribute("onclick", stripped);
+
+    pulsContainer.appendChild(puls);
+
+    puls.innerHTML = obj[i].FriendIntro.botName;
+  }
+/*
+  console.log(puls);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(pulsContainer);*/
+}
+
+function addCanocchiale (){
+  console.log("Carico trova mappa -> 6");
+  fetch("./json/dino/dino.json")
+  .then(function(res){
+  return res.json(); // pars the json in a regular js obj
+  }).then(function(obj){
+
+  pulisci();
+
+
+  appendDatamyData9(obj);
+  appendDataPicture9(obj);
+  appendDataButton9(obj);
+  console.log("Andato a buon fine")
+
+  }).catch(function(err){
+  console.error(err);
+  })
+
+}
+
+function appendDatamyData9(obj){
+  var mainContainer = document.getElementById("myData");
+for (var i = 0; i < obj.length; i++) {
+  var introduzione = document.createElement("p");
+  mainContainer.appendChild(introduzione);
+  introduzione.innerHTML = obj[i].FriendIntro.text;
+}/*
+console.log(introduzione);
+console.log("----");*/
+
+}
+
+
+function appendDataPicture9(obj){
+  var picContainer = document.getElementById("picture");
+
+  for (var j = 0; j < obj.length; j++) {
+    var urlvalue = JSON.stringify(obj[j].FriendIntro.img_url);
+    var stripped = urlvalue.replace(/['"]+/g, "");
+    var img_url = document.createElement("IMG");
+    img_url.setAttribute("src", stripped);
+    img_url.setAttribute("width", "640");
+    img_url.setAttribute("height", "220");
+    //img_url.setAttribute("alt", "The Pulpit Rock");
+    //document.body.appendChild(img_url);
+    picContainer.appendChild(img_url);
+    img_url.innerHTML = obj[j].FriendIntro.img_url;
+  }
+/*
+  console.log(img_url);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(picContainer);
+  console.log("----");*/
+}
+function appendDataButton9(obj){
+
+  var pulsContainer = document.getElementById("pulsante");
+
+  for (var i = 0; i < obj.length; i++) {
+    var urlvalue = JSON.stringify(obj[i].FriendIntro.botFunc);
+
+    var stripped = urlvalue.replace(/['"]+/g, "");
+
+    var puls = document.createElement("button");
+
+    puls.setAttribute("onclick", stripped);
+
+    pulsContainer.appendChild(puls);
+
+    puls.innerHTML = obj[i].FriendIntro.botName;
+  }
+/*
+  console.log(puls);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(pulsContainer);*/
+}
+
+function addKitMedico (){
+  console.log("Carico trova mappa -> 6");
+  fetch("./json/dino/dino.json")
+  .then(function(res){
+  return res.json(); // pars the json in a regular js obj
+  }).then(function(obj){
+
+  pulisci();
+
+
+  appendDatamyData10(obj);
+  appendDataPicture10(obj);
+  appendDataButton10(obj);
+  console.log("Andato a buon fine")
+
+  }).catch(function(err){
+  console.error(err);
+  })
+
+}
+
+function appendDatamyData10(obj){
+  var mainContainer = document.getElementById("myData");
+for (var i = 0; i < obj.length; i++) {
+  var introduzione = document.createElement("p");
+  mainContainer.appendChild(introduzione);
+  introduzione.innerHTML = obj[i].FriendIntro.text;
+}/*
+console.log(introduzione);
+console.log("----");*/
+
+}
+
+
+function appendDataPicture10(obj){
+  var picContainer = document.getElementById("picture");
+
+  for (var j = 0; j < obj.length; j++) {
+    var urlvalue = JSON.stringify(obj[j].FriendIntro.img_url);
+    var stripped = urlvalue.replace(/['"]+/g, "");
+    var img_url = document.createElement("IMG");
+    img_url.setAttribute("src", stripped);
+    img_url.setAttribute("width", "640");
+    img_url.setAttribute("height", "220");
+    //img_url.setAttribute("alt", "The Pulpit Rock");
+    //document.body.appendChild(img_url);
+    picContainer.appendChild(img_url);
+    img_url.innerHTML = obj[j].FriendIntro.img_url;
+  }
+/*
+  console.log(img_url);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(picContainer);
+  console.log("----");*/
+}
+function appendDataButton10(obj){
+
+  var pulsContainer = document.getElementById("pulsante");
+
+  for (var i = 0; i < obj.length; i++) {
+    var urlvalue = JSON.stringify(obj[i].FriendIntro.botFunc);
+
+    var stripped = urlvalue.replace(/['"]+/g, "");
+
+    var puls = document.createElement("button");
+
+    puls.setAttribute("onclick", stripped);
+
+    pulsContainer.appendChild(puls);
+
+    puls.innerHTML = obj[i].FriendIntro.botName;
+  }
+/*
+  console.log(puls);
+  console.log(urlvalue);
+  console.log(stripped);
+  console.log(pulsContainer);*/
+}
     function fetchFriendIntro (){
-      console.log("Carico trova mappa -> 4");
+      console.log("Carico trova mappa -> 6");
       fetch("./json/dino/dino.json")
       .then(function(res){
       return res.json(); // pars the json in a regular js obj
@@ -394,9 +792,9 @@
       pulisci();
 
 
-      appendDatamyData6(obj);
-      appendDataPicture6(obj);
-      appendDataButton6(obj);
+      appendDatamyData11(obj);
+      appendDataPicture11(obj);
+      appendDataButton11(obj);
       console.log("Andato a buon fine")
 
       }).catch(function(err){
@@ -405,7 +803,7 @@
 
     }
 
-    function appendDatamyData6(obj){
+    function appendDatamyData11(obj){
       var mainContainer = document.getElementById("myData");
     for (var i = 0; i < obj.length; i++) {
       var introduzione = document.createElement("p");
@@ -418,7 +816,7 @@
   }
 
 
-  function appendDataPicture6(obj){
+  function appendDataPicture11(obj){
       var picContainer = document.getElementById("picture");
   
       for (var j = 0; j < obj.length; j++) {
@@ -440,7 +838,7 @@
       console.log(picContainer);
       console.log("----");*/
     }
-    function appendDataButton6(obj){
+    function appendDataButton11(obj){
   
       var pulsContainer = document.getElementById("pulsante");
   
@@ -463,9 +861,9 @@
       console.log(stripped);
       console.log(pulsContainer);*/
   }
+//----------------------------FriendIntro---------------------//
 
 
- 
 
 
   
