@@ -4,24 +4,15 @@
             "text": "Chiamata in arrivo . . .",
             "botName": "Rispondi",
             "botFunc": "fetchPresentation()",
-            "img_url": "./img/dinoEsTwo.jpg",
-            "backpack":{
-                "obj1": "",
-                "obj2": "",
-                "obj3": ""
-            }
+            "img_url": "./img/dinoEsTwo.jpg"
+            
         },
         
         "Presentation":{
             "text": "Ciao io mi chiamo Dino, se vuoi iniziare a giocare con me clicca sul pulsante seguente",
             "botName": "Via!",
             "botFunc": "fetchNascondigli()",
-            "img_url":"./img/dinoEsOne.png",
-            "backpack":{
-                "obj1": "",
-                "obj2": "",
-                "obj3": ""
-            }
+            "img_url":"./img/dinoEsOne.png"
         },
         "HideAndSeek":{
             "text":"Aiutami devo trovare un riparo dal terremoto! dove mi posso nascondere??",
@@ -29,47 +20,31 @@
             "botName": "porta",
             "botName2": "tavolo",
             "botName3": "giardino",
-            "img_url":"./img/dinoEsTwo.jpg",
+            "img_url":"./img/dinoEsTwo.jpg"
 
-            "backpack":{
-                "obj1": "",
-                "obj2": "",
-                "obj3": ""
             
-            }
         },
         "FindMap":{
             "text":"Bravissmo hai trovato una mappa fai uno schreenshot e conserva la foto, ci servira' dopo",
             "botName": "porta",
             "botFunc": "fetchPreareBackpack()",
-            "img_url":"./img/dinoEsOne.jpg",
-            "backpack":{
-                "obj1": "",
-                "obj2": "",
-                "obj3": ""
-            }
+            "img_url":"./img/dinoEsOne.jpg"
+            
         },
         "PrepareBackpack":{
             "text":"Prepariamoci per un lungo viaggio! prepariamo lo zaino. Scegli 3 oggetti che ti vuoi portare dietro che ci potranno servire",
             "botName": "borraccia",
-            "botFunc": "addBottle()",
+            "botFunc": "addObjToBackpack(1)",
             "botName2": "Corda",
-            "botFunc2": "addCorda()",
+            "botFunc2": "addObjToBackpack(2)",
             "botName3": "Forbici",
-            "botFunc3": "addForbici()",
+            "botFunc3": "addObjToBackpack(3)",
             "botName4": "Cannocchiale",
-            "botFunc4": "addCannocchiale()",
+            "botFunc4": "addObjToBackpack(4)",
             "botName5": "kit medico",
-            "botFunc5": "addKitMedico()",
-            "botAvanti" : "Avanti",
-            "botFunctAvanti": "fetchFriendIntro()",
-            "img_url":"./img/dinoEsTwo.jpg",
+            "botFunc5": "addObjToBackpack(5)",
+            "img_url":"./img/dinoEsTwo.jpg"
 
-            "backpack":{
-                "obj1": "",
-                "obj2": "",
-                "obj3": ""
-            }
         },
         "FriendIntro": {
             "text": "Per aiutarci in questa avventura ci aiutera' un nuovo amico! Lui si chaiama BEPPE, mi sai dire che tipo di dinosaure e'?",
@@ -79,13 +54,8 @@
             "botFunc2": "ritenta()",
             "botName3": "Torosauro",
             "botFunc3": "Giusto()",
-            "img_url":"./img/dinoEsOne.jpg",
+            "img_url":"./img/dinoEsOne.jpg"
 
-            "backpack":{
-                "obj1": "",
-                "obj2": "",
-                "obj3": ""
-            }
 
         }
 

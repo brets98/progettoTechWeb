@@ -71,7 +71,6 @@
     /*
     console.log(introduzione);
     console.log("----");*/
-
   }
   
   function appendDataPicture(obj){
