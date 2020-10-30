@@ -480,7 +480,7 @@
         break;
     }
     console.log(backpack); 
-
+    
   }
 //----------------------------FriendIntro---------------------//
   function fetchFriendIntro(){
