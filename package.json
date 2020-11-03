@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/brets98/progTechWeb#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "vue": "^2.6.12"
   }
 }
